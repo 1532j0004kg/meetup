@@ -4,7 +4,7 @@
    <title>Meetup</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="front.css">
 </head>
 
 <body>
@@ -14,26 +14,32 @@
       <a class="navbar-brand">PostBoy</a>
     </div>
 
-     <button id="login" class="btn-primary navbar-right">login</button>
+<a href='/loginpage.html'> <button id="login" class="btn-primary navbar-right">login</button></a>
 
    </div>
   </nav>
 
-<div class="container">
 
-  <div class="well">
-    <h2 id="well" class="text-center">Would you like to post your meeting , please <a href="#">login</a></h2>
-  </div>
+<div class="container">
 
 <br>
 <div class="well">
-  <h2 class="meeting-name text-center">geek night</h2>
 
-  <h2> Meeting place : <i> kgisl </i> </h2>
-  <h2> Meeting about : <i> deeplearning </i> </h2>
+  <table style="width:100%">
+  <tr>
+    <th>Company_name</th>
+    <th>Meeting_place</th>
+    <th>Meeting_about</th>
+  </tr>
+  <tr>
+    <td id = "c"></td>
+    <td id = "mp"></td>
+    <td id = "ma"></td>
+  </tr>
+</table>
 
   </div>
 </div>
 </body>
-<script  src="index.js"></script>
+<script  src="front.js"></script>
 </html>

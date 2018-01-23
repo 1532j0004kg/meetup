@@ -1,0 +1,70 @@
+<html>
+
+<head>
+   <title>Meetup</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="post.css">
+</head>
+
+
+<body>
+<a href="/logout" id="logout" class="text-center" > logout </a>
+<div class="container">
+
+<div class="well">
+  <div class="row">
+    <div class="col-xs-3">
+  <h2> Company_name  </h2>
+</div>
+<div class="col-xs-4">
+  <input id = "companyname"></input>
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-3">
+  <h2> Meeting_place </h2>
+</div>
+<div class="col-xs-4">
+ <input id = "meetingplace"></input>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-xs-3">
+<h2> Meeting_about </h2>
+  </div>
+<div class="col-xs-4">
+    <input id = "meetingabout"></input>
+</div>
+</div>
+
+  <button id = "Submit" class="text-center">Submit</button>
+  </div>
+  <div class="container">
+
+  <br>
+  <div class="well">
+
+    <table style="width:100%">
+    <tr>
+      <th>Company_name</th>
+      <th>Meeting_place</th>
+      <th>Meeting_about</th>
+    </tr>
+    <tr>
+      <td id = "c"></td>
+      <td id = "mp"></td>
+      <td id = "ma"></td>
+    </tr>
+  </table>
+
+    </div>
+
+  </div>
+
+</div>
+</body>
+<script  src="post.js"></script>
+</html>

@@ -1,18 +1,21 @@
 var express = require("express");
 var router = express.Router();
 var mongoose = require('mongoose');
+var session = require("express-session");
+var sess;
 
-var usersSchema = mongoose.Schema({
+var loginSchema = mongoose.Schema({
   username : String,
   password : String
 });
 
-var usersModel = mongoose.model('users' , usersSchema);
+var loginModel = mongoose.model('users' , loginSchema);
 
 router.post('/login' ,function(req,res){
+  sess = req.session;
+  sess.username = req.body.username;
 
-
-  var newUser = new usersModel();
+  var newUser = new loginModel();
   newUser.username = req.body.username;
   newUser.password = req.body.password;
   newUser.save(function(err,savedObject){
@@ -21,8 +24,8 @@ router.post('/login' ,function(req,res){
     res.statusCode(500).send();
    }
    else {
-       res.send(savedObject);
-   }
+      res.send(savedObject);
+  }
   });
 });
 

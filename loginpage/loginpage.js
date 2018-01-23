@@ -12,9 +12,13 @@ $("#register").click(function(){
     contentType : "application/json",
     dataType : 'json',
     success : function(data,err){
-     console.log(data);
-     if(err)
+
+      window.location.href = "/post.html";
+
+    if(err)
        console.log(err);
+
+
    }
 
     });
