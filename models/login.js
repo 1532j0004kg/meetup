@@ -24,7 +24,8 @@ router.post('/login' ,function(req,res){
     res.statusCode(500).send();
    }
    else {
-      res.send(savedObject);
+     res.send(savedObject);
+      //res.redirect('/post.html');
   }
   });
 });

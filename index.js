@@ -5,8 +5,8 @@ var session = require("express-session");
 var usersModel = require('./models/login.js');
 var postModel = require('./models/postdata.js');
 
-mongoose.connect('mongodb://dinesh007:ozian111@ds115768.mlab.com:15768/postboy');
-mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://dinesh:ozian111@ds115768.mlab.com:15768/postboy');
+//mongoose.Promise = global.Promise;
 
 var app = express();
 app.use(express.static('loginpage'));

@@ -4,14 +4,32 @@
    <title>Meetup</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="loginpage.css">
 </head>
 
-<body>
-<div class="text-center">
-  <h2>username: <input id="username"></input> </h2>
-  <h2>password: <input id="password"></input> </h2>
-  <button id="register">Register</button>
-</div>
+
+
+  <body>
+
+    <a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        	  <div class="modal-dialog">
+    				<div class="loginmodal-container">
+    					<h1>Login to Your Account</h1><br>
+    				  <form>
+    					<input type="text" id="username" name="user" placeholder="Username">
+    					<input type="password" id="password" name="pass" placeholder="Password">
+    					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+    				  </form>
+
+    				  <div class="login-help">
+    					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+    				  </div>
+    				</div>
+    			</div>
+    		  </div>
+
 
 </body>
 <script  src="loginpage.js"></script>

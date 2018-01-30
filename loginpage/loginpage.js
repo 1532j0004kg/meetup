@@ -1,26 +1,26 @@
 $(document).ready(function(){
 
 
-$("#register").click(function(){
+$("#signin").click(function(){
+var passWord = $("#password").val();
+var userName = $("#username").val();
+if((userName != "") && (passWord != ""))
+{
   $.ajax({
+
     type : "post",
     url : 'http://localhost:8000/login',
     data : JSON.stringify({
-      username :  $("#username").val(),
-      password : $("#password").val()
+      username :  userName,
+      password : passWord
     }),
     contentType : "application/json",
     dataType : 'json',
-    success : function(data,err){
+    success : function name(){
 
       window.location.href = "/post.html";
-
-    if(err)
-       console.log(err);
-
-
-   }
-
-    });
+    }
   });
+}
+});
 });
